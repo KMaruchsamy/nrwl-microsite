@@ -1,0 +1,22 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/todo-lib/src",
+  "prefix": "nrwl-microsite",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/todo-lib"],
+      "options": {
+        "jestConfig": "libs/todo-lib/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": ["libs/todo-lib/**/*.ts", "libs/todo-lib/**/*.html"]
+      }
+    }
+  },
+  "tags": []
+}
